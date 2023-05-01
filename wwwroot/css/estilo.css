@@ -1,0 +1,138 @@
+﻿@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: coral;
+}
+
+header{
+    background-color:blueviolet;
+    width:99%;
+    max-width: 1000px;
+    margin:20px auto;
+    padding:10px;
+}
+#Cuerpo{
+    background-color: palegreen;
+    width: 99%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: skyblue;
+    width: 99%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+
+
+header{
+    background:darkgreen;
+    width: 96.5%;
+}
+
+header nav  {
+    background: #9f3e40;
+    overflow: hidden;
+    clear: both;
+}
+
+header nav ul{
+    list-style:none;
+}
+
+header nav ul li{
+    float:left;
+}
+
+header nav ul li a{
+    padding: 10px 20px;
+    display:block;
+    color:white;
+    text-decoration:none;
+}
+
+header nav ul li a:hover {
+        background: #1587FF;
+}
+
+h1{
+    margin-top: 70px;
+    text-align: center;
+}
+
+div{
+    width: 78%;
+    padding:20px;
+    float:left;
+    margin-bottom:20px;
+}
+
+aside ul li{
+    padding:10px 10px;
+    display:block;
+    color:paleturquoise;
+    text-decoration:none;
+}
+
+section{
+    width:100%;
+    margin-left:1.5%;
+    padding:20px;
+    float:left;
+    background:#146897;
+}
+
+div section article{
+    padding: 20px;
+    background: #9f3e40;
+    margin-bottom: 20px;
+}
+
+#barralateral{
+    width:15.5%;
+    float:left;
+    background:#D200DE;
+    padding:10px;
+    box-sizing:border-box;
+    height:85%;
+    margin-left:0.5%;
+    position:relative;
+}
+
+footer {
+    background: #ff6a00;
+    width:97%;
+    color:white;
+    clear:both;
+    padding:10px;
+    margin:20px;
+    text-align:center;
+}
+
+
+h2,h3,h4,h5,h6{
+    font-size:25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font:italic;
+}
+
+h2,h4{
+    color:blue;
+}
+
+article p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    color:white;
+    text-align:center;
+}

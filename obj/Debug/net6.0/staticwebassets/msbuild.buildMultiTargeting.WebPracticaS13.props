@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WebPracticaS13.props" />
+</Project>

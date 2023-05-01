@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Este meta es para dar una descripción de la pagina que usuario esta visitando" />
+    <meta name="Autor" content="Johalmo Rivas,Oscar Rivas, Maria Rivas" />
+    <meta name="keywords" content="sarten, recetas, utencilios" />
+    <meta name="Copyright" content="Rivas S.A de S.V" />
+    <meta name="robots" content="index,follow" />
+
+    <title>@ViewData["Title"] - WebPracticaS13</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebPracticaS13.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/estilo.css" asp-append-version="true"> 
+
+</head>
+<body>
+    <main id="Cuerpo">
+        <header>
+            <nav>
+                <div >
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebPracticaS13</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Acercade">Acerca de</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contactos">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <aside id="barralateral">
+            <ul>
+                <li><a href="">Titulo 1</a></li>
+                <li><a href="">Titulo 2</a></li>
+                <li><a href="">Titulo 3</a></li>
+                <li><a href="">Titulo 4</a></li>
+            </ul>
+        </aside>
+
+        <div>
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer >
+            <h2>By Nombre estudiante</h2>
+            &copy; 2023 - WebPracticaS13 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </footer>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </main>
+</body>
+</html>
